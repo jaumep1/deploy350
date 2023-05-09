@@ -1,0 +1,135 @@
+:root {
+    --font-family: 'Inter', sans-serif;
+    
+    --card-background-color: #FFFFFF;
+    --card-border-color: #DADADA;
+    --card-header-color: #EBEBEB;
+    --card-header-text-color: #6B6D71;
+    --card-header-font-size: 0.5em;
+    --card-border-radius: 10px;
+
+    --card-title-font-size: 0.75em;
+    --card-title-font-weight: 600;
+    --card-title-text-color: #000000;
+
+    --button-radius: 5px;
+
+    --green: #00850D;
+    --red: #AA0000;
+    --yellow: #FFD954;
+    --dark-grey: #6B6D71;
+    --medium-grey: #7E7979;
+    --light-grey: #F8F8F8;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: var(--font-family);
+    color: #000000;
+    line-height: normal;
+}
+
+.normal-line-height {
+    line-height: normal;
+}
+
+/* #region Colors */
+.dark-grey {
+    color: var(--dark-grey);
+}
+.background-dark-grey {
+    background-color: var(--dark-grey);
+}
+.background-white {
+    background-color: var(--white);
+}
+.green {
+    color: var(--green);
+}
+.background-yellow {
+    background-color: var(--yellow);
+}
+.red {
+    color: var(--red);
+}
+.background-red {
+    background-color: var(--red);
+}
+.background-green {
+    background-color: var(--green);
+}
+/* #endregion */
+
+/* #region Delivery Card Template */
+.delivery-card {
+    border-radius: var(--card-border-radius);
+    background-color: var(--card-background-color);
+    border: solid 1px var(--card-border-color);
+}
+.delivery-card-header {
+    background-color: var(--card-header-color);
+    border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+    color: var(--card-header-text-color);
+    border: solid 1px var(--card-border-color);
+}
+.delivery-card-title, .delivery-card-item-title {
+    font-size: var(--card-title-font-size);
+    font-weight: var(--card-title-font-weight);
+    color: #000000;
+}
+.delivery-card button {
+    border-radius: var(--button-radius);
+    border: 2px solid var(--card-border-color);
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.1);
+    height: 30px;
+    width: 75px;
+    font-size: 0.75rem;
+}
+/* #endregion */
+
+/* #region Storeroom Current Order Card */
+.section-border {
+    border-right: 0.5px solid var(--card-border-color);
+}
+.status-dropdown {
+    border: 1px solid var(--card-border-color);
+    border-radius: 0.25rem;
+    width: 125px;
+    background-color: var(--light-grey);
+    color: var(--medium-grey);
+    cursor: pointer;
+    font-size: 0.75rem;
+
+    height: 30px;
+    padding-left: 5px;
+}
+.status-update-text {
+    color: var(--medium-grey);
+    font-weight: 400;
+    font-size: 0.75rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: 0.5rem;
+    background-color: var(--light-grey);
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.5em;
+    resize: none;
+}
+.update-btn {
+    background-color: var(--green);
+}
+.chat-badge {
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    background-color: var(--red);
+    color: white;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+/* #endregion */
